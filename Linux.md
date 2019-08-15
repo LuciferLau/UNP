@@ -7,11 +7,14 @@
 非阻塞：用户访问数据时，立刻获得一个状态值，然后进程继续向下执行。  
 
     • 文件系统的理解（EXT4，XFS，BTRFS）tobedone
+https://blog.csdn.net/u014743697/article/details/54089297
     
     • 文件处理grep,awk,sed这三个命令必知必会 tobedone
+https://www.cnblogs.com/dazhidacheng/p/8030481.html
 grep：文本过滤器；awk：报告生成器，支持正则表达式和简单编程；sed：流编辑器。  
 
     • IO复用的三种方法（select,poll,epoll）深入理解，包括三者区别，内部原理实现？tobedone 
+select和poll相似，都是在用户态维护一个消息队列，在检测到可读或者可写时，把套接字加载到内核态，
 
     • Epoll的ET模式和LT模式（ET的非阻塞）  
 LT（level trigger）水平触发：程序可以不马上处理事件，下次调用epoll_wait时再次通知程序这个事件。  
@@ -28,9 +31,16 @@ find：从指定目录递归的查找指定文件。
 cp：将文件拷贝到某一位置。  
 
     • shell脚本用法（只会hello world）  
+文件test.sh的内容为
 ''  
-!# bim/bash
+#! bim/bash
 echo 'hello world'
+''  
+执行脚本方法
+''  
+1 ./test.sh  
+2 bash test.sh  
+3 sh test.sh
 ''  
 
     • 硬连接和软连接的区别  
