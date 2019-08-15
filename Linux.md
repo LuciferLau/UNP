@@ -32,16 +32,16 @@ cp：将文件拷贝到某一位置。
 
     • shell脚本用法（只会hello world）  
 文件test.sh的内容为  
-''  
+'''  
 #! bim/bash  
 echo 'hello world'  
-''  
+'''  
 执行脚本方法
-""  
-1 ./test.sh  
-2 bash test.sh  
-3 sh test.sh
-""  
+'''  
+1 ./test.sh    
+2 bash test.sh    
+3 sh test.sh  
+'''  
 
     • 硬连接和软连接的区别  
 硬链接创建文件的另一个实体，但是使用相同的iNode，实际上是文件的另一个别名。  
