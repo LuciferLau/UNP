@@ -33,16 +33,17 @@ cp：将文件拷贝到某一位置。
 
 ---  
     • shell脚本用法（只会hello world）  
-### 文件test.sh的内容为  
+##### 文件test.sh的内容为  
 ```  
 #! bim/bash  
-echo 'hello world'  
+echo "hello world"  
 ```  
-### 执行脚本方法
+##### 执行脚本方法
 ```  
 1 ./test.sh    
 2 bash test.sh    
 3 sh test.sh   
+bash是sh的超集，完全兼容sh。
 ```  
 ---   
 
