@@ -1,4 +1,5 @@
 # 《UNIX网络编程 卷1》
+> 以下所有Server都是echo server，即客户端发什么，服务器回什么。
 ### 最简单的TCP Server
 [基础](https://github.com/LuciferLau/UNP/upload/master/basic%20server)  
 ### 加入了select的TCP Server
