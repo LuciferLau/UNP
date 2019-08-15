@@ -31,23 +31,24 @@ find：从指定目录递归的查找指定文件。
 cp：将文件拷贝到某一位置。  
 
     • shell脚本用法（只会hello world）  
-文件test.sh的内容为  
-'''  
+### 文件test.sh的内容为  
+(''')  
 #! bim/bash  
 echo 'hello world'  
-'''  
-执行脚本方法
-'''  
+(''')  
+### 执行脚本方法
+(''')  
 1 ./test.sh    
 2 bash test.sh    
 3 sh test.sh  
-'''  
+(''')  
 
     • 硬连接和软连接的区别  
 硬链接创建文件的另一个实体，但是使用相同的iNode，实际上是文件的另一个别名。  
 软链接类似Windows系统下的快捷方式，里面包含着链接文件的绝对路径，如果链接文件被删除，就无法访问对应的绝对路径，但它有自己的iNode。  
 如图可见硬链接和文件testln的iNode是相同的，而软链接的不一样。  
- 
+![link](https://raw.githubusercontent.com/LuciferLau/UNP/master/pic/link.jpg)  
+
     • 文件权限怎么看（rwx）  
 ls -l 可以看到文件的权限，r读，w写，x执行，通过chmod更改权限，选项u用户，g用户组，o其他用户，+表示添加，-表示删除，也可以用0~7数字表示权限。  
 
